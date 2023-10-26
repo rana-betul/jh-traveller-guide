@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Sayfanın varsayılan margin ve padding değerlerini sıfırlamak için yazıldı. 
+"*" işareti, yapılan düzenlemenin tüm öğeler için geçerli olmasını sağlar.*/
+
+html {
+    font-size: 7px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    /* html içine yazılan genel 10px değerini 1.6 ile çarpar. Yani 16 px yapar.
+    Ama rem yazıldığında orantılı olarak değişim sağlanabildiğinden 16 yazmank yerine rem cinsinden yazdık.*/
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #9b7b97;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    padding: 1.6rem 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+header{
+    height: 46rem;
+}
+
+header .bg-image{
+
+    position: absolute;
+    background-image: url(JH\ Resimler/JH-4.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+header h1{
+    border-bottom: 3px solid rgba(155, 123, 151, 0.9);
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1.2rem 3.2rem;
+    margin: 0.5rem 0;
+    background-color: rgba(183, 141, 153, 0.8);
+    color: white;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+.btn:hover{
+    background-color: rgba(83, 121, 128, 0.7);
+}
+
+#section-a{
+    background-color: white;
+    padding: 25px;
+}
+
+.col-content{
+    background-color: white;
+    padding: 1.5rem;
+}
+
+#section-b li{
+    margin-bottom: 30px;
+}
+
+#section-c{
+    color: white;
+    background-color: rgba(83, 121, 128, 0.7);
+    padding: 2rem;
+}
+
+#section-d .box {
+    color: black;
+    padding: 0.5em;
+}
+
+#section-d .mail:hover {
+    color: rgb(157, 226, 100);
+    font-size: larger;
+}
+
+
+#section-d .box:first-child{
+    background-color: rgba(43, 45, 61, 0.6);
+}
+
+.mail:hover{
+    color: rgb(157, 226, 100);
+    font-size: larger;
+}
+
+.content-title{
+   
+}
+
+.follow:hover{
+    color: rgb(157, 226, 100);
+    font-size: larger;
+}
+
+footer{
+    color: white;
+    background-color: black;
+}
+
+.created:hover{
+    color: rgb(157, 226, 100);
+    font-size: larger;
+}
+
+/* 
+örnek renk paleti
+
+{color: #9b7b97;}
+{color: #b78d99;}
+{color: #ccb8ad;}
+{color: #e0dfd7;}
+{color: #f0f0f2;}
+*/
+
+@media screen and (min-width: 800px) {
+    html {
+        font-size: 9px;
+    }    
+}
+
+@media screen and (min-width:1200px) {
+    html{
+        font-size: 11px;
+    }
+
+    #section {
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box {
+        width: 50%;
+        float: left;
+    }
+}
