@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+button{
+        display: inline-block;
+        padding: 0.8rem 0.8rem;
+        margin: 2rem 2rem;
+        background-color: greenyellow;
+        border-radius: 10px;
+        transition: all 0.4s;
+    }
+    
+button:hover{
+        background-color: lightsalmon;
+}
+
+#goup{
+    background-color: white;
+    text-align: right;
+}
+
 /*Sayfanın varsayılan margin ve padding değerlerini sıfırlamak için yazıldı. 
 "*" işareti, yapılan düzenlemenin tüm öğeler için geçerli olmasını sağlar.*/
 
@@ -20,6 +38,7 @@ body {
     line-height: 1.5;
     text-align: center;
     background-color: #9b7b97;
+   
 }
 
 a {
@@ -113,6 +132,15 @@ header h1{
 
 #section-d .box:first-child{
     background-color: rgba(43, 45, 61, 0.6);
+}
+
+.col-video{
+    background-color: lightblue;
+    padding: 1rem;
+}
+
+.video{
+    padding-top: 3rem;
 }
 
 .mail:hover{
