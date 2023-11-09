@@ -28,7 +28,7 @@ button:hover {
 html {
     font-size: 7px;
     scroll-behavior: smooth;
-    
+
 }
 
 body {
@@ -166,7 +166,7 @@ footer {
 
 small:hover {
     color: rgb(157, 226, 100);
-    }
+}
 
 /* 
 örnek renk paleti
@@ -178,13 +178,21 @@ small:hover {
 {color: #f0f0f2;}
 */
 
-@media screen and (min-width: 800px) {
+@media (min-width: 400px) {
+    html {
+        font-size: 7px;
+    }
+    
+}
+
+@media (min-width: 800px) {
     html {
         font-size: 9px;
     }
+
 }
 
-@media screen and (min-width:1200px) {
+@media (min-width:1200px) {
     html {
         font-size: 11px;
     }
@@ -198,5 +206,25 @@ small:hover {
     .box {
         width: 50%;
         float: left;
+    }
+
+}
+
+.video {
+    display: flex;
+}
+
+iframe {
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .video {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 80%;
     }
 }
